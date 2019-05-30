@@ -1,0 +1,34 @@
+drop database if exists ppe_event;
+create database ppe_event;
+use ppe_event;
+
+
+
+create table admin(
+	iduser int (11) not null auto_increment,
+	droits varchar(100) not null,
+	poste varchar(50) not null,
+	nom varchar(50),
+	email varchar(200),
+	mdp  varchar(200),
+	primary key(iduser)
+);
+
+
+create table prestataire(
+	iduser int(11) not null auto_increment;
+	service varchar(50) not null,
+	adresse varchar(50) not null,
+	ville varchar(50) not null,
+	codepostal varchar (10) noy null,
+	telephone int(11) not null,
+	nom varchar(50) not null,
+	email varchar(200) not null,
+	email varchr(200) not null,
+	mdp varchar (200) not null,
+	primary key (iduser)
+);
+
+
+insert into user values (null, "a@gmail.com", "123", "admin", "admin", "admin");
+
